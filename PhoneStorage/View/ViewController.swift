@@ -39,17 +39,6 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func save(_ sender: UIButton) {
-        AlertManager.showAlertWithTwoFields(s: self, title: "Save", message: "Write an info about mobile") { strings in
-            let mobile = Mobile(imei: strings[0], model: strings[1])
-            
-            do {
-                let result = try self.vcManager.save(mobile)
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-    }
     @IBAction func getAll(_ sender: UIButton) {
         tvc.mobiles = Array(vcManager.getAll())
         tableV.reloadData()

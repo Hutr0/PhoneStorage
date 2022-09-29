@@ -17,47 +17,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SIX-sH-ZEU">
-                                <rect key="frame" x="32" y="594" width="326" height="200"/>
+                                <rect key="frame" x="32" y="570" width="326" height="224"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KM6-Ai-mpi">
-                                        <rect key="frame" x="0.0" y="0.0" width="326" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="44"/>
                                         <color key="tintColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="GetAll">
-                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="getAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kN-ZR-GVJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPl-MD-3bn">
-                                        <rect key="frame" x="0.0" y="54" width="326" height="38"/>
+                                        <rect key="frame" x="0.0" y="60" width="326" height="44"/>
                                         <color key="tintColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="FindByIMEI">
-                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="findByIMEI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YN1-5g-5Q8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ci-Dr-pTa">
-                                        <rect key="frame" x="0.0" y="108" width="326" height="38"/>
+                                        <rect key="frame" x="0.0" y="120" width="326" height="44"/>
                                         <color key="tintColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Delete">
-                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="deleteByIMEI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ELH-lQ-ARo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewj-A7-8n4">
-                                        <rect key="frame" x="0.0" y="162" width="326" height="38"/>
+                                        <rect key="frame" x="0.0" y="180" width="326" height="44"/>
                                         <color key="tintColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Exists">
-                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                            <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="25"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="exists:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iCS-CM-Kwy"/>
@@ -67,66 +67,60 @@
                                 <color key="backgroundColor" red="0.70750359299999999" green="0.76106972169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Storage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDe-42-qxJ">
-                                <rect key="frame" x="16" y="91" width="358" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <rect key="frame" x="16" y="91" width="358" height="42.333333333333343"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EWD-w5-yj1" customClass="TableViewController" customModule="PhoneStorage" customModuleProvider="target">
-                                <rect key="frame" x="32" y="165" width="326" height="397"/>
+                                <rect key="frame" x="32" y="165.33333333333334" width="326" height="372.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="113" id="d6M-5h-4mA" customClass="TableViewCell" customModule="PhoneStorage" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="326" height="113"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="d6M-5h-4mA" customClass="TableViewCell" customModule="PhoneStorage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="326" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d6M-5h-4mA" id="4yV-Ix-Yyx">
-                                            <rect key="frame" x="0.0" y="0.0" width="326" height="113"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="326" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="cFy-dq-NJR">
-                                                    <rect key="frame" x="16" y="16" width="294" height="33"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMEI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoR-pj-tqk">
-                                                            <rect key="frame" x="0.0" y="0.0" width="24.333333333333332" height="16"/>
-                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
-                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5od-DT-KWO">
-                                                            <rect key="frame" x="0.0" y="17" width="41.333333333333336" height="16"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xzN-rz-4Me">
-                                                    <rect key="frame" x="16" y="65" width="274" height="37"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haR-DE-XA4">
-                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="18"/>
-                                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
-                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNv-4a-QYS">
-                                                            <rect key="frame" x="0.0" y="19" width="41.333333333333336" height="18"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMEI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoR-pj-tqk">
+                                                    <rect key="frame" x="20" y="11" width="24.333333333333329" height="15.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haR-DE-XA4">
+                                                    <rect key="frame" x="20" y="55.333333333333336" width="34" height="15.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5od-DT-KWO">
+                                                    <rect key="frame" x="20.000000000000004" y="26.666666666666664" width="38.333333333333343" height="20.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNv-4a-QYS">
+                                                    <rect key="frame" x="20.000000000000004" y="71" width="38.333333333333343" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="cFy-dq-NJR" firstAttribute="top" secondItem="4yV-Ix-Yyx" secondAttribute="top" constant="16" id="1Fq-ao-7ob"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="xzN-rz-4Me" secondAttribute="bottom" id="45Z-6R-jzE"/>
-                                                <constraint firstItem="cFy-dq-NJR" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leading" constant="16" id="7vP-xp-Jey"/>
-                                                <constraint firstItem="xzN-rz-4Me" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leading" constant="16" id="PAM-Fe-VFN"/>
-                                                <constraint firstAttribute="trailing" secondItem="cFy-dq-NJR" secondAttribute="trailing" constant="16" id="TA9-kX-sXc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="xzN-rz-4Me" secondAttribute="trailing" constant="16" id="aPP-NS-c02"/>
-                                                <constraint firstItem="xzN-rz-4Me" firstAttribute="top" secondItem="cFy-dq-NJR" secondAttribute="bottom" constant="16" id="u4t-2E-ADo"/>
-                                                <constraint firstItem="xzN-rz-4Me" firstAttribute="top" secondItem="4yV-Ix-Yyx" secondAttribute="top" constant="65" id="zVL-E3-woN"/>
+                                                <constraint firstItem="TNv-4a-QYS" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leadingMargin" id="2an-Lj-4q8"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="haR-DE-XA4" secondAttribute="trailing" constant="20" symbolic="YES" id="FJG-ta-1cT"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TNv-4a-QYS" secondAttribute="trailing" constant="20" symbolic="YES" id="HwL-is-ouQ"/>
+                                                <constraint firstItem="eoR-pj-tqk" firstAttribute="top" secondItem="4yV-Ix-Yyx" secondAttribute="topMargin" id="LXo-SY-l2r"/>
+                                                <constraint firstItem="haR-DE-XA4" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leadingMargin" id="OWa-rY-Qdt"/>
+                                                <constraint firstItem="5od-DT-KWO" firstAttribute="top" secondItem="eoR-pj-tqk" secondAttribute="bottom" id="SfO-09-c4W"/>
+                                                <constraint firstItem="TNv-4a-QYS" firstAttribute="top" secondItem="haR-DE-XA4" secondAttribute="bottom" id="Ufu-j8-65N"/>
+                                                <constraint firstItem="haR-DE-XA4" firstAttribute="top" secondItem="5od-DT-KWO" secondAttribute="bottom" constant="8" id="Xe5-mq-OAS"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eoR-pj-tqk" secondAttribute="trailing" constant="20" symbolic="YES" id="Ylc-9t-72C"/>
+                                                <constraint firstItem="eoR-pj-tqk" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leadingMargin" id="ady-S7-myR"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5od-DT-KWO" secondAttribute="trailing" constant="20" symbolic="YES" id="iDf-G0-Vcx"/>
+                                                <constraint firstItem="5od-DT-KWO" firstAttribute="leading" secondItem="4yV-Ix-Yyx" secondAttribute="leadingMargin" id="od9-Uc-5r5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -182,13 +176,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMEI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAB-NC-bS8">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wmN-JN-Kvj">
                                         <rect key="frame" x="0.0" y="41.000000000000028" width="326" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="textChanged:" destination="4m4-p4-wid" eventType="editingChanged" id="HPH-zK-hfB"/>
@@ -197,8 +191,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adding a new mobile device" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEO-Sp-Avk">
-                                <rect key="frame" x="16" y="79" width="358" height="83.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <rect key="frame" x="16" y="79" width="358" height="84.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -207,13 +201,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwu-Cg-Baf">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAf-WZ-IKL">
                                         <rect key="frame" x="0.0" y="41" width="326" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <action selector="textChanged:" destination="4m4-p4-wid" eventType="editingChanged" id="xHq-dr-tg1"/>
