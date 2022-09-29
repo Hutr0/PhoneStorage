@@ -33,6 +33,20 @@ class ViewControllerManager: MobileStorage {
     }
     
     func findByImei(_ imei: String) -> Mobile? {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MobileEntity")
+        
+        do {
+            let fetchedResults = try context.fetch(fetchRequest) as! [NSManagedObject]
+            for object in fetchedResults {
+                if object.value(forKey: "imei") as? String == imei {
+                    return Mobile(imei: object.value(forKey: "imei") as! String,
+                                  model: object.value(forKey: "model") as! String)
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
         return nil
     }
     
@@ -58,7 +72,8 @@ class ViewControllerManager: MobileStorage {
             let fetchedResults = try context.fetch(fetchRequest) as! [NSManagedObject]
             for object in fetchedResults {
                 print(object)
-                if object.value(forKey: "imei") as? String == product.imei {
+                if object.value(forKey: "imei") as? String == product.imei &&
+                    object.value(forKey: "model") as? String == product.model {
                     context.delete(object)
                 }
             }

@@ -44,13 +44,25 @@ class ViewController: UIViewController {
         tableV.reloadData()
     }
     @IBAction func findByIMEI(_ sender: UIButton) {
-        let result = vcManager.findByImei("1")
+        
+        AlertManager.showAlertForFindByIMEI(vc: self) { imei in
+            let result = self.vcManager.findByImei(imei)
+            
+            if result != nil {
+                AlertManager.showInfoAlert(vc: self, title: "Mobile found", message: "IMEI: \(result!.imei)\nModel: \(result!.model)")
+            } else {
+                AlertManager.showInfoAlert(vc: self, title: "Mobile not found", message: "Mobile for written imei was not found")
+            }
+        }
     }
     @IBAction func deleteByIMEI(_ sender: UIButton) {
-        do {
-            try vcManager.delete(Mobile(imei: "imei", model: "1"))
-        } catch {
-            print(error.localizedDescription)
+        AlertManager.showAlertWithTwoFieldsForDeleteMobile(s: self) { strings in
+            do {
+                try self.vcManager.delete(Mobile(imei: strings[0], model: strings[1]))
+            } catch {
+                print(error.localizedDescription)
+                AlertManager.showInfoAlert(vc: self, title: "Error", message: error.localizedDescription)
+            }
         }
     }
     @IBAction func exists(_ sender: UIButton) {
