@@ -14,9 +14,16 @@
 		E03139F828E2FC3B0065362F /* PhoneStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E03139F628E2FC3B0065362F /* PhoneStorage.xcdatamodeld */; };
 		E03139FA28E2FC3D0065362F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E03139F928E2FC3D0065362F /* Assets.xcassets */; };
 		E03139FD28E2FC3D0065362F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E03139FB28E2FC3D0065362F /* LaunchScreen.storyboard */; };
-		E0313A0828E2FC3D0065362F /* PhoneStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A0728E2FC3D0065362F /* PhoneStorageTests.swift */; };
+		E0313A0828E2FC3D0065362F /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A0728E2FC3D0065362F /* ViewControllerTests.swift */; };
 		E0313A1228E2FC3D0065362F /* PhoneStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A1128E2FC3D0065362F /* PhoneStorageUITests.swift */; };
 		E0313A1428E2FC3D0065362F /* PhoneStorageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A1328E2FC3D0065362F /* PhoneStorageUITestsLaunchTests.swift */; };
+		E0313A2928E300190065362F /* MobileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A2828E300190065362F /* MobileStorage.swift */; };
+		E0313A2B28E3002C0065362F /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A2A28E3002C0065362F /* Mobile.swift */; };
+		E0313A2D28E3005E0065362F /* ViewControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A2C28E3005E0065362F /* ViewControllerManager.swift */; };
+		E0313A2F28E353030065362F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0313A2E28E353030065362F /* AlertManager.swift */; };
+		E0EE1FDB28E5881E00C33A0A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE1FDA28E5881E00C33A0A /* AddViewController.swift */; };
+		E0EE1FDD28E5980600C33A0A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE1FDC28E5980600C33A0A /* TableViewController.swift */; };
+		E0EE1FDF28E59AA700C33A0A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EE1FDE28E59AA700C33A0A /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +54,17 @@
 		E03139FC28E2FC3D0065362F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E03139FE28E2FC3D0065362F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0313A0328E2FC3D0065362F /* PhoneStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0313A0728E2FC3D0065362F /* PhoneStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneStorageTests.swift; sourceTree = "<group>"; };
+		E0313A0728E2FC3D0065362F /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		E0313A0D28E2FC3D0065362F /* PhoneStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0313A1128E2FC3D0065362F /* PhoneStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneStorageUITests.swift; sourceTree = "<group>"; };
 		E0313A1328E2FC3D0065362F /* PhoneStorageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneStorageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0313A2828E300190065362F /* MobileStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileStorage.swift; sourceTree = "<group>"; };
+		E0313A2A28E3002C0065362F /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		E0313A2C28E3005E0065362F /* ViewControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerManager.swift; sourceTree = "<group>"; };
+		E0313A2E28E353030065362F /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		E0EE1FDA28E5881E00C33A0A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E0EE1FDC28E5980600C33A0A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E0EE1FDE28E59AA700C33A0A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +115,12 @@
 		E03139EC28E2FC3B0065362F /* PhoneStorage */ = {
 			isa = PBXGroup;
 			children = (
-				E03139ED28E2FC3B0065362F /* AppDelegate.swift */,
-				E03139EF28E2FC3B0065362F /* SceneDelegate.swift */,
-				E03139F128E2FC3B0065362F /* ViewController.swift */,
-				E03139F328E2FC3B0065362F /* Main.storyboard */,
-				E03139F928E2FC3D0065362F /* Assets.xcassets */,
-				E03139FB28E2FC3D0065362F /* LaunchScreen.storyboard */,
-				E03139FE28E2FC3D0065362F /* Info.plist */,
-				E03139F628E2FC3B0065362F /* PhoneStorage.xcdatamodeld */,
+				E0313A2428E2FC830065362F /* Protocol */,
+				E0313A2328E2FC7A0065362F /* Model */,
+				E0313A2228E2FC750065362F /* View */,
+				E0313A2128E2FC6A0065362F /* ViewModel */,
+				E0313A2728E2FD5E0065362F /* Manager */,
+				E0313A2028E2FC5A0065362F /* Supproting files */,
 			);
 			path = PhoneStorage;
 			sourceTree = "<group>";
@@ -116,7 +128,7 @@
 		E0313A0628E2FC3D0065362F /* PhoneStorageTests */ = {
 			isa = PBXGroup;
 			children = (
-				E0313A0728E2FC3D0065362F /* PhoneStorageTests.swift */,
+				E0313A0728E2FC3D0065362F /* ViewControllerTests.swift */,
 			);
 			path = PhoneStorageTests;
 			sourceTree = "<group>";
@@ -128,6 +140,79 @@
 				E0313A1328E2FC3D0065362F /* PhoneStorageUITestsLaunchTests.swift */,
 			);
 			path = PhoneStorageUITests;
+			sourceTree = "<group>";
+		};
+		E0313A2028E2FC5A0065362F /* Supproting files */ = {
+			isa = PBXGroup;
+			children = (
+				E0313A2628E2FCF00065362F /* App */,
+				E0313A2528E2FCE20065362F /* Resources */,
+			);
+			path = "Supproting files";
+			sourceTree = "<group>";
+		};
+		E0313A2128E2FC6A0065362F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0313A2C28E3005E0065362F /* ViewControllerManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0313A2228E2FC750065362F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E03139F328E2FC3B0065362F /* Main.storyboard */,
+				E03139F128E2FC3B0065362F /* ViewController.swift */,
+				E0EE1FDA28E5881E00C33A0A /* AddViewController.swift */,
+				E0EE1FDC28E5980600C33A0A /* TableViewController.swift */,
+				E0EE1FDE28E59AA700C33A0A /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0313A2328E2FC7A0065362F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0313A2A28E3002C0065362F /* Mobile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0313A2428E2FC830065362F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E0313A2828E300190065362F /* MobileStorage.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E0313A2528E2FCE20065362F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E03139FE28E2FC3D0065362F /* Info.plist */,
+				E03139F928E2FC3D0065362F /* Assets.xcassets */,
+				E03139F628E2FC3B0065362F /* PhoneStorage.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E0313A2628E2FCF00065362F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E03139ED28E2FC3B0065362F /* AppDelegate.swift */,
+				E03139EF28E2FC3B0065362F /* SceneDelegate.swift */,
+				E03139FB28E2FC3D0065362F /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E0313A2728E2FD5E0065362F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E0313A2E28E353030065362F /* AlertManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0313A2F28E353030065362F /* AlertManager.swift in Sources */,
 				E03139F828E2FC3B0065362F /* PhoneStorage.xcdatamodeld in Sources */,
+				E0EE1FDB28E5881E00C33A0A /* AddViewController.swift in Sources */,
+				E0EE1FDD28E5980600C33A0A /* TableViewController.swift in Sources */,
 				E03139F228E2FC3B0065362F /* ViewController.swift in Sources */,
 				E03139EE28E2FC3B0065362F /* AppDelegate.swift in Sources */,
+				E0EE1FDF28E59AA700C33A0A /* TableViewCell.swift in Sources */,
+				E0313A2B28E3002C0065362F /* Mobile.swift in Sources */,
+				E0313A2D28E3005E0065362F /* ViewControllerManager.swift in Sources */,
 				E03139F028E2FC3B0065362F /* SceneDelegate.swift in Sources */,
+				E0313A2928E300190065362F /* MobileStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0313A0828E2FC3D0065362F /* PhoneStorageTests.swift in Sources */,
+				E0313A0828E2FC3D0065362F /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhoneStorage/Info.plist;
+				INFOPLIST_FILE = "PhoneStorage/Supproting files/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +563,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhoneStorage/Info.plist;
+				INFOPLIST_FILE = "PhoneStorage/Supproting files/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
