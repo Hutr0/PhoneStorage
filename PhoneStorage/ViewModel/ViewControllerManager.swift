@@ -51,6 +51,21 @@ class ViewControllerManager: MobileStorage {
     }
     
     func save(_ mobile: Mobile) throws -> Mobile {
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MobileEntity")
+        
+        do {
+            let fetchedResults = try context.fetch(fetchRequest) as! [NSManagedObject]
+            for object in fetchedResults {
+                if object.value(forKey: "imei") as? String == mobile.imei {
+                    print("Current imei is already use.")
+                    return Mobile(imei: "", model: "")
+                }
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
+        
         let entity =  NSEntityDescription.entity(forEntityName: "MobileEntity", in: context)
         let mobiles = NSManagedObject(entity: entity!, insertInto: context)
         mobiles.setValue(mobile.imei, forKey: "imei")
@@ -90,7 +105,6 @@ class ViewControllerManager: MobileStorage {
     
     func exists(_ product: Mobile) -> Bool {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MobileEntity")
-        let fetchedResult = try? context.fetch(fetchRequest) as? [NSManagedObject]
         
         do {
             let fetchedResults = try context.fetch(fetchRequest) as! [NSManagedObject]

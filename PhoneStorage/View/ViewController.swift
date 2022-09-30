@@ -66,7 +66,18 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func exists(_ sender: UIButton) {
-        let result = vcManager.exists(Mobile(imei: "1", model: "1"))
+        AlertManager.showAlertWithTwoFieldsForCheckExistMobile(s: self) { str in
+            let result = self.vcManager.exists(Mobile(imei: str[0], model: str[1]))
+            
+            var title: String = ""
+            if result {
+                title = "Exist"
+            } else {
+                title = "Not exist"
+            }
+            
+            AlertManager.showInfoAlert(vc: self, title: title, message: "")
+        }
     }
 }
 

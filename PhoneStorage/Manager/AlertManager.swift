@@ -28,10 +28,37 @@ class AlertManager {
             compltion([imeiText, modelText])
         }
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         
-        alert.addAction(saveAction)
         alert.addAction(cancelAction)
+        alert.addAction(saveAction)
+        
+        s.present(alert, animated: true)
+    }
+    
+    static func showAlertWithTwoFieldsForCheckExistMobile(s: ViewController, compltion: @escaping ([String]) -> ()) {
+        let alert = UIAlertController(title: "Is the mobile exists", message: "Write IMEI and Model for check for existence the mobile", preferredStyle: .alert)
+        
+        alert.addTextField() { tf in
+            tf.placeholder = "IMEI"
+        }
+        
+        alert.addTextField() { tf in
+            tf.placeholder = "Model"
+        }
+        
+        let checkAction = UIAlertAction(title: "Check", style: .default) { action in
+            let imei = alert.textFields![0] as UITextField
+            let model = alert.textFields![1] as UITextField
+            
+            guard let imeiText = imei.text, let modelText = model.text else { return }
+            compltion([imeiText, modelText])
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        alert.addAction(cancelAction)
+        alert.addAction(checkAction)
         
         s.present(alert, animated: true)
     }
